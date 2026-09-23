@@ -1,13 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of full stack developer Ram Prakash Reddy."
+    />
+    <title>Ram Prakash Reddy | Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container nav-content">
+        <a class="logo" href="#home">Ram</a>
+        <div class="nav-links">
+          <a class="active" href="#home" aria-current="location">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Experience</a>
+          <a href="#video">Video</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero section" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="label">Full Stack Developer</p>
+          <h1>Ram Prakash Reddy</h1>
+          <p class="hero-text">
+            CS@UIUC, 2x founding engineer, and product builder working across
+            mobile, web, and backend systems.
+          </p>
+          <a class="button" href="#about">About me</a>
+        </div>
+        <img
+          class="profile-image"
+          src="assets/image.png"
+          alt="Ram Prakash Reddy at the University of Illinois Urbana-Champaign"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="label">About</p>
+            <h2>About me</h2>
+            <p>
+              I am pursuing a master's degree in Computer Science at the
+              University of Illinois Urbana-Champaign, where I also work as a
+              Graduate Research Assistant. Previously, I worked as a software
+              engineer at Discovery Partners Institute and as a founding
+              engineer at two health technology companies.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <span class="card-icon mobile-icon" aria-hidden="true"></span>
+              <h3>Mobile</h3>
+              <p>React Native applications for iOS and Android.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-icon web-icon" aria-hidden="true"></span>
+              <h3>Web</h3>
+              <p>TypeScript, React, Next.js, and web dashboards.</p>
+            </article>
+            <article class="info-card">
+              <span class="card-icon backend-icon" aria-hidden="true"></span>
+              <h3>Backend</h3>
+              <p>
+                Node.js, AWS, GCP, Firebase, APIs, and cloud infrastructure.
+              </p>
+            </article>
+          </div>
+
+          <button class="button" id="open-modal" type="button">
+            More about my work
+          </button>
+        </div>
+      </section>
+
+      <section class="fixed-image section" aria-label="Portfolio statement">
+        <div class="container">
+          <p>MobileApps · Backend Systems · Infrastructure · Agentic AI</p>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="label">Portfolio</p>
+            <h2>Experience</h2>
+          </div>
+
+          <div class="carousel" aria-label="Experience carousel">
+            <div class="carousel-window">
+              <div class="carousel-track">
+                <article class="slide">
+                  <div class="slide-content">
+                    <p class="label">Founding Engineer · 2024–2025</p>
+                    <h3>Proactively</h3>
+                    <p>
+                      Built and launched mobile and web platforms from scratch.
+                      I also worked on AWS infrastructure, compliance ready
+                      workflows, Stripe billing, CI/CD, and data integrations.
+                    </p>
+                  </div>
+                </article>
+                <article class="slide">
+                  <div class="slide-content">
+                    <p class="label">Founding Engineer · 2023–2024</p>
+                    <h3>PlateUp Health</h3>
+                    <p>
+                      Led development of the first MVP and helped grow it into
+                      an iOS and Android app. I also built clinician dashboards
+                      with React and Next.js.
+                    </p>
+                  </div>
+                </article>
+                <article class="slide">
+                  <div class="slide-content">
+                    <p class="label">Backend Developer · 2021–2022</p>
+                    <h3>FastJobs.io</h3>
+                    <p>
+                      Built REST APIs with Node.js and AWS services. Backend and
+                      database improvements reduced response times by 45%, while
+                      an image pipeline reduced load times by 65%.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button
+              class="carousel-button previous"
+              type="button"
+              aria-label="Previous slide"
+            >
+              &#8592;
+            </button>
+            <button
+              class="carousel-button next"
+              type="button"
+              aria-label="Next slide"
+            >
+              &#8594;
+            </button>
+            <p class="slide-number" aria-live="polite">
+              <span id="current-slide">1</span> / 3
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section section" id="video">
+        <div class="container video-layout">
+          <div>
+            <p class="label">Video</p>
+            <h2>Favourite clip</h2>
+            <p>A short clip of CIF during winter.</p>
+          </div>
+          <video controls playsinline preload="metadata">
+            <source src="assets/cif_video.mp4" type="video/mp4" />
+            This browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-content">
+          <p class="label">Contact</p>
+          <h2>Contact me</h2>
+          <p>
+            <a href="mailto:ramprakashreddy008@gmail.com"
+              >ramprakashreddy008@gmail.com</a
+            >
+          </p>
+          <div class="social-links" aria-label="Contact and social media links">
+            <a
+              href="mailto:ramprakashreddy008@gmail.com"
+              aria-label="Email Ram"
+            >
+              <span class="social-icon email-icon" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ramprakashreddy1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <img
+                class="social-image"
+                src="assets/linkedin.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://github.com/ramprakashreddy1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <img
+                class="social-image"
+                src="assets/github.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>Ram Prakash Reddy</p>
+        <p>&copy; <span id="year">2026</span></p>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="info-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-box">
+        <button class="modal-close" type="button" aria-label="Close modal">
+          &times;
+        </button>
+        <h2 id="modal-title">About my work</h2>
+        <p>
+          I build products end to end, from React Native apps to the APIs and
+          AWS infrastructure behind them. As an early engineer at two healthcare
+          startups, I owned product architecture, cloud infrastructure, billing,
+          CI/CD, compliance, and the full release cycle to the App Store and
+          Play Store.
+        </p>
+        <button class="button modal-done" type="button">Close</button>
+      </div>
+    </div>
+  </body>
 </html>
